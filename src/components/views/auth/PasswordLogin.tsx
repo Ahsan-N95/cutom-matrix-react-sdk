@@ -316,10 +316,10 @@ export default class PasswordLogin extends React.PureComponent<IProps, IState> {
                     label={_t("Username")}
                     placeholder={_t("Username").toLocaleLowerCase()}
                     value={this.props.username}
-                    onChange={this.onUsernameChanged}
-                    onBlur={this.onUsernameBlur}
+               //     onChange={this.onUsernameChanged}
+               //     onBlur={this.onUsernameBlur}
                     disabled={this.props.busy}
-                    autoFocus={autoFocus}
+               //     autoFocus={autoFocus}
                     onValidate={this.onUsernameValidate}
                     ref={field => this[LoginField.MatrixId] = field}
                 />;
@@ -427,9 +427,9 @@ export default class PasswordLogin extends React.PureComponent<IProps, IState> {
                         name="password"
                         label={_t('Password')}
                         value={this.state.password}
-                        onChange={this.onPasswordChanged}
-                        disabled={this.props.busy}
-                        autoFocus={autoFocusPassword}
+                   //     onChange={this.onPasswordChanged}
+                   //     disabled={this.props.busy}
+                   //     autoFocus={autoFocusPassword}
                         onValidate={this.onPasswordValidate}
                         ref={field => this[LoginField.Password] = field}
                     />
